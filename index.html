@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!-- Эта строка помогает сайту хорошо выглядеть на телефоне -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТехноМастер — ремонт компьютеров</title>
+  <!-- Подключаем файл со стилями -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Шапка сайта: название и меню -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">ТехноМастер</a>
+      <nav class="menu">
+        <a href="#services">Услуги</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Главный блок с заголовком и кнопкой -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-label">Сервисный центр в вашем городе</p>
+        <h1>Ремонт компьютеров без лишних хлопот</h1>
+        <p class="hero-text">
+          Диагностика, ремонт и настройка компьютеров и ноутбуков.
+          Берём технику в работу, объясняем причину поломки простым языком
+          и возвращаем устройство готовым к использованию.
+        </p>
+        <div class="hero-buttons">
+          <a class="button" href="#services">Наши услуги</a>
+          <a class="button button-secondary" href="#contacts">Связаться с нами</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Три карточки услуг -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2>Наши услуги</h2>
+        <p class="section-text">Помогаем, когда компьютер тормозит, не включается или ведёт себя странно.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Ремонт компьютеров</h3>
+            <p>Находим и устраняем поломки: замена деталей, чистка, ремонт после перегрева и сбоев.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🛡️</div>
+            <h3>Удаление вирусов</h3>
+            <p>Очищаем систему от вирусов и рекламных программ, восстанавливаем стабильную работу.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🪟</div>
+            <h3>Установка Windows</h3>
+            <p>Устанавливаем систему, драйверы и нужные программы, чтобы компьютер снова работал быстро.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок с преимуществами -->
+    <section class="section section-alt" id="advantages">
+      <div class="container">
+        <h2>Почему выбирают нас</h2>
+        <p class="section-text">Коротко о том, чем удобен сервис «ТехноМастер».</p>
+
+        <ul class="advantages">
+          <li>
+            <strong>Честная диагностика</strong>
+            Сначала выясняем причину, потом согласовываем работу и стоимость.
+          </li>
+          <li>
+            <strong>Понятные сроки</strong>
+            Большинство задач выполняем за 1–2 дня, срочный ремонт — по договорённости.
+          </li>
+          <li>
+            <strong>Гарантия на работы</strong>
+            На ремонт и установленные детали даём гарантию до 90 дней.
+          </li>
+          <li>
+            <strong>Бережная работа</strong>
+            Сохраняем ваши файлы, когда это возможно, и предупреждаем заранее, если риск есть.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Контактный блок -->
+    <section class="section" id="contacts">
+      <div class="container contacts">
+        <div>
+          <h2>Свяжитесь с нами</h2>
+          <p class="section-text">
+            Позвоните или напишите — подскажем, что случилось с компьютером
+            и запишем на удобное время.
+          </p>
+        </div>
+        <div class="contact-card">
+          <p class="contact-label">Телефон</p>
+          <a class="contact-phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+          <p>Ежедневно с 10:00 до 20:00</p>
+          <p>г. Москва, ул. Компьютерная, 12</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 ТехноМастер. Вымышленный сервис для учебного проекта.</p>
+    </div>
+  </footer>
+  
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const target = document.querySelector(link.getAttribute('href'));
+
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+</script>
+  </body>
+</html>
