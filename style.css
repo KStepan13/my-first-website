@@ -129,7 +129,9 @@ img {
 }
 
 .button:hover {
-  background-color: #7bb8ff;
+  transform: translateY(-3px);
+  background-color: #70b5ff;
+  box-shadow: 0 12px 26px rgba(77, 163, 255, 0.4);
 }
 
 .button-secondary {
